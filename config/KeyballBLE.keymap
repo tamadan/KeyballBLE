@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp SINGLE_QUOTE            &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp SEMICOLON               &kp LEFT_BRACKET   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 2 LANGUAGE_6  &lt 2 SPACE  &lt_to_layer_0 6 LANG4      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp SINGLE_QUOTE                 &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp SEMICOLON                    &kp LEFT_BRACKET   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 LANGUAGE_1  &lt 2 SPACE  &lt_to_layer_0 4 LANGUAGE_2      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -98,10 +98,10 @@
 
         MOUSE {
             bindings = <
-&trans    &trans     &trans     &trans     &trans                           &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
-&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &mkp LCLK      &trans  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
-&trans    &trans     &trans     &trans     &trans    &mkp RCLK      &trans  &trans              &kp LG(LEFT_ARROW)      &kp LG(R)  &kp LG(RIGHT_ARROW)      &trans
-&trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                                                          &trans
+&trans    &trans     &trans     &trans             &kp K_SCROLL_UP                           &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
+&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK          &kp K_SCROLL_DOWN  &mkp LCLK      &trans  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
+&trans    &trans     &trans     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &mkp RCLK      &trans  &trans              &kp LG(LEFT_ARROW)      &kp LG(R)  &kp LG(RIGHT_ARROW)      &trans
+&trans    &trans     &trans     &trans             &trans             &trans         &trans  &trans                                                                          &trans
             >;
         };
 
