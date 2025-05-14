@@ -98,10 +98,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &kp LG(LS(EQUAL))  &kp C_VOLUME_UP                           &none               &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &none
-&trans  &trans  &trans  &kp LG(LS(MINUS))  &kp C_VOLUME_DOWN  &mkp LCLK      &none   &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
-&trans  &trans  &trans  &trans             &trans             &mkp RCLK      &none   &kp LA(LC(LG(M)))   &kp LG(LEFT_ARROW)      &kp LG(R)  &kp LG(RIGHT_ARROW)      &kp LA(LC(LG(L)))
-&trans  &trans  &trans  &trans             &trans             &trans         &trans  &trans                                                                          &none
+&trans  &trans  &trans  &trans  &kp C_VOLUME_UP                           &none               &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &none
+&trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &mkp LCLK      &none   &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans             &mkp RCLK      &none   &kp LA(LC(LG(M)))   &kp LG(LEFT_ARROW)      &kp LG(R)  &kp LG(RIGHT_ARROW)      &kp LA(LC(LG(L)))
+&trans  &trans  &trans  &trans  &trans             &trans         &trans  &trans                                                                          &none
             >;
         };
 
