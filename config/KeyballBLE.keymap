@@ -60,7 +60,7 @@
             bindings = <
 &kp Q             &kp W         &kp E           &kp R                    &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D           &kp F                    &kp G        &lt 6 SINGLE_QUOTE               &kp RIGHT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp SEMICOLON                    &kp LEFT_BRACKET   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &lt 1 SEMICOLON                  &kp LEFT_BRACKET   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_WIN LANG_HANJA  &lt 2 SPACE  &lt_to_layer_0 4 LANGUAGE_1      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
             >;
 
@@ -69,10 +69,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                       &kp F1          &kp F2          &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp LG(LS(F6))  &kp LG(LS(N5))  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans          &trans          &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                          &kp F12
             >;
         };
 
