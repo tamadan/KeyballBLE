@@ -31,6 +31,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        input_1Password: input_1Password {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp A &kp M &kp A &kp AT &kp D &kp A &kp N &kp N1 &kp N2 &kp N3 &kp RET>;
+            label = "INPUT_1PASSWORD";
+        };
+
+        input_versatile_Psddword: input_versatile_Psddword {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N1 &kp N2 &kp N3>;
+            label = "INPUT_VERSATILE_PSDDWORD";
+        };
     };
 
     behaviors {
@@ -58,7 +72,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E           &kp R                    &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &kp W         &kp E           &kp R                    &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D           &kp F                    &kp G        &lt 6 SINGLE_QUOTE               &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &lt 1 SEMICOLON                  &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_WIN LANG_HANJA  &lt 2 SPACE  &lt_to_layer_0 4 LANGUAGE_1      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
@@ -98,7 +112,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &kp C_VOLUME_UP                           &none               &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &none
+&trans  &trans  &trans  &trans  &kp C_VOLUME_UP                           &input_1Password    &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &input_versatile_Psddword
 &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &mkp LCLK      &none   &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
 &trans  &trans  &trans  &trans  &trans             &mkp RCLK      &none   &kp LA(LC(LG(M)))   &kp LG(LEFT_ARROW)      &kp LG(R)  &kp LG(RIGHT_ARROW)      &kp LA(LC(LG(L)))
 &trans  &trans  &trans  &trans  &trans             &trans         &trans  &trans                                                                          &none
