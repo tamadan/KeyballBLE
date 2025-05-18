@@ -42,14 +42,14 @@
         input_versatile_Psddword: input_versatile_Psddword {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N1 &kp N2 &kp N3>;
+            bindings = <&kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N1 &kp N2 &kp N3>;
             label = "INPUT_VERSATILE_PSDDWORD";
         };
 
         input_pc_pssword: input_pc_pssword {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N8 &kp N3 &kp N1 &kp N0 &kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N8 &kp N3 &kp N1 &kp N0 &kp RET>;
+            bindings = <&kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N8 &kp N3 &kp N1 &kp N0 &kp RET>;
             label = "INPUT_PC_PSSWORD";
         };
     };
