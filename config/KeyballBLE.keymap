@@ -22,6 +22,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
+
+        toggle_lsy {
+            bindings = <&tog 4>;
+            key-positions = <28 16>;
+        };
     };
 
     macros {
