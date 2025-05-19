@@ -119,10 +119,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &kp C_VOLUME_UP                           &input_1Password    &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &input_versatile_Psddword
-&trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &mkp LCLK      &none   &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
-&trans  &trans  &trans  &trans  &trans             &mkp RCLK      &none   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
-&trans  &trans  &trans  &trans  &trans             &trans         &trans  &trans                                                                          &input_pc_pssword
+&trans  &trans  &trans  &trans  &kp C_VOLUME_UP                           &input_versatile_Psddword  &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &input_1Password
+&trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &mkp LCLK      &none   &kp LC(LEFT_ARROW)         &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans             &mkp RCLK      &none   &kp LA(LC(LG(M)))          &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
+&trans  &trans  &trans  &trans  &trans             &trans         &trans  &trans                                                                                 &input_pc_pssword
             >;
         };
 
