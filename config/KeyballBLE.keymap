@@ -25,7 +25,7 @@
 
         toggle_lsy {
             bindings = <&tog 4>;
-            key-positions = <28 16>;
+            key-positions = <18 41>;
         };
     };
 
