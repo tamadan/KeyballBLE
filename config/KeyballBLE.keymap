@@ -24,15 +24,18 @@
         };
 
         to_layer4 {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <18 41>;
-            layers = <0>;
         };
 
-        to_layer0 {
-            bindings = <&to 0>;
-            key-positions = <18 41>;
-            layers = <4>;
+        arrow_up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <7 41>;
+        };
+
+        arrow_down {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <19 41>;
         };
     };
 
@@ -131,10 +134,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                 &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
-&trans  &trans  &trans  &trans  &trans       &kp C_VOLUME_UP        &input_pc_pssword  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
-&trans  &trans  &trans  &trans  &trans       &kp C_VOLUME_DOWN      &input_1Password   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
-&trans  &trans  &trans  &trans  &lt 2 SPACE  &lt 0 LANGUAGE_1       &trans             &lt 3 ENTER                                                                     &input_versatile_Psddword
+&trans  &trans  &trans  &trans  &trans                                            &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
+&trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP        &input_pc_pssword  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN      &input_1Password   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans             &trans                                                                          &input_versatile_Psddword
             >;
         };
 
