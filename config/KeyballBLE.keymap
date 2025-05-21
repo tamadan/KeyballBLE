@@ -23,9 +23,16 @@
             key-positions = <20 21>;
         };
 
-        toggle_lsy {
-            bindings = <&tog 4>;
+        to_layer4 {
+            bindings = <&to 4>;
             key-positions = <18 41>;
+            layers = <4>;
+        };
+
+        to_layer0 {
+            bindings = <&to 0>;
+            key-positions = <18 41>;
+            layers = <4>;
         };
     };
 
