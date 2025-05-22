@@ -123,10 +123,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp LG(W)      &kp LG(UP_ARROW)  &kp LG(R)      &kp LG(T)                      &none   &none           &kp UP_ARROW    &none            &trans
-&kp TAB     &kp LG(A)      &kp LG(S)         &kp LG(F)      &trans     &trans      &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp LG(Z)   &kp LG(X)      &kp LG(C)         &kp LG(V)      &trans     &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans      &kp LA(SPACE)  &kp LEFT_SHIFT    &kp LG(SPACE)  &trans     &trans      &trans  &trans                                                   &trans
+&kp ESCAPE  &kp LG(W)      &kp LG(UP_ARROW)  &kp LG(R)      &kp LG(T)                                 &none   &none           &kp UP_ARROW    &none            &trans
+&kp TAB     &kp LG(A)      &kp LG(S)         &kp LG(F)      &trans     &kp C_VOLUME_UP        &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LG(Z)   &kp LG(X)      &kp LG(C)         &kp LG(V)      &trans     &kp C_VOLUME_DOWN      &trans  &trans  &trans          &trans          &trans           &trans
+&trans      &kp LA(SPACE)  &kp LEFT_SHIFT    &kp LG(SPACE)  &trans     &trans                 &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -134,10 +134,10 @@
 
         MOUSE {
             bindings = <
-&trans             &trans           &trans  &trans  &trans                                 &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
-&trans             &trans           &trans  &trans  &trans  &trans      &input_pc_pssword  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
-&trans             &trans           &trans  &trans  &trans  &trans      &input_1Password   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
-&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans      &trans             &trans                                                                          &input_versatile_Psddword
+&trans  &trans  &trans  &trans  &trans                                 &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &input_pc_pssword  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans      &input_1Password   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                                                          &input_versatile_Psddword
             >;
         };
 
