@@ -105,10 +105,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp LG(LS(NUMBER_4))        &kp LG(LS(N5))            &kp F8                       &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                      &trans                    &trans                       &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                                     &kp F12
+&trans  &trans          &kp UP_ARROW    &trans           &trans                       &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F4  &kp F5
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp F13  &kp LG(LS(NUMBER_4))        &kp LG(LS(N5))            &kp F8                       &kp F9  &kp F10
+&trans  &trans          &trans          &trans           &trans  &trans      &trans   &trans                      &trans                    &trans                       &trans  &kp F11
+&trans  &trans          &trans          &trans           &trans  &trans      &trans   &trans                                                                                     &kp F12
             >;
         };
 
