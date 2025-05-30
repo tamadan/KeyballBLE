@@ -18,24 +18,14 @@
     combos {
         compatible = "zmk,combos";
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
         to_layer4 {
             bindings = <&tog 4>;
             key-positions = <18 41>;
         };
 
         arrow_up {
-            bindings = <&kp UP_ARROW>;
+            bindings = <&kp LG(W)>;
             key-positions = <7 41>;
-        };
-
-        arrow_down {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <19 41>;
         };
     };
 
@@ -134,7 +124,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                 &trans              &kp LG(LA(LEFT_ARROW))  &kp LG(W)  &kp LG(LA(RIGHT_ARROW))  &trans
+&trans  &trans  &trans  &trans  &trans                                 &trans              &kp LG(LA(LEFT_ARROW))  &trans     &kp LG(LA(RIGHT_ARROW))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &input_pc_pssword  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
 &trans  &trans  &trans  &trans  &trans  &trans      &input_1Password   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
 &trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                                                          &input_versatile_Psddword
