@@ -43,7 +43,7 @@
         game_ID: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp W &kp I &kp R &kp I &kp G &kp H &kp T &kp AT_SIGN &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp T &kp W &kp I &kp R &kp I &kp G &kp H &kp T &kp NUMBER_8 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_0 &kp AT_SIGN &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "TO_LAYER_0";
         };
 
