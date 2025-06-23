@@ -40,10 +40,10 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        game_ID: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp W &kp I &kp R &kp I &kp G &kp H &kp T &kp AT_SIGN &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "TO_LAYER_0";
         };
 
@@ -73,7 +73,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&game_ID>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -107,7 +107,7 @@
             bindings = <
 &trans  &trans          &kp UP_ARROW    &trans           &trans                                     &trans                &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &kp F13     &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))              &kp LG(LS(NUMBER_6))      &kp LS(SINGLE_QUOTE)         &kp F10
-&trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans      &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
+&trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &game_ID    &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
 &trans  &trans          &trans          &trans           &trans  &trans                 &kp DELETE  &trans                                                                                                   &kp F12
             >;
         };
