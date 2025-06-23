@@ -35,7 +35,7 @@
 
         to_layer_0 {
             bindings = <&to 0>;
-            key-positions = <20 41>;
+            key-positions = <41 19>;
         };
     };
 
