@@ -19,7 +19,7 @@
         compatible = "zmk,combos";
 
         to_layer4 {
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
             key-positions = <18 41>;
         };
 
@@ -31,6 +31,11 @@
         to_layer_6 {
             bindings = <&tog 6>;
             key-positions = <15 27>;
+        };
+
+        to_layer_0 {
+            bindings = <&to 0>;
+            key-positions = <20 41>;
         };
     };
 
