@@ -105,9 +105,9 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans          &kp UP_ARROW    &trans           &trans                                     &trans                &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
+&trans  &trans          &kp UP_ARROW    &trans           &trans                                     &game_ID              &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &kp F13     &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))              &kp LG(LS(NUMBER_6))      &kp LS(SINGLE_QUOTE)         &kp F10
-&trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &game_ID    &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
+&trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans      &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
 &trans  &trans          &trans          &trans           &trans  &trans                 &kp DELETE  &trans                                                                                                   &kp F12
             >;
         };
