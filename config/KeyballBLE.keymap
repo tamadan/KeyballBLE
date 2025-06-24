@@ -150,7 +150,7 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans          &kp UP_ARROW    &trans           &trans                                     &game_ID              &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
+&trans  &trans          &kp UP_ARROW    &trans           &trans                                     &trans                &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &kp F13     &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))              &kp LG(LS(NUMBER_6))      &kp LS(SINGLE_QUOTE)         &kp F10
 &trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans      &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
 &trans  &trans          &trans          &trans           &trans  &trans                 &kp DELETE  &trans                                                                                                   &kp F12
@@ -170,8 +170,8 @@
             bindings = <
 &kp ESCAPE     &trans          &kp UP_ARROW    &trans           &trans                                 &none     &none           &kp UP_ARROW    &none            &trans
 &kp TAB        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &none   &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans         &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans  &trans    &kp LG(C)       &trans          &kp LG(V)        &trans
-&kp LG(SPACE)  &kp LA(SPACE)   &kp LEFT_SHIFT  &trans           &trans  &trans                 &trans  &trans                                                     &trans
+&trans         &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans  &trans    &kp LG(C)       &kp LG(LS(V))   &kp LG(V)        &trans
+&kp LG(SPACE)  &kp LA(SPACE)   &kp LEFT_SHIFT  &trans           &trans  &trans                 &trans  &trans                                                     &game_ID
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -179,10 +179,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                 &trans              &kp LG(LA(LEFT_ARROW))  &trans     &kp LG(LA(RIGHT_ARROW))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &input_pc_pssword  &kp LC(LEFT_ARROW)  &mkp LCLK               &mkp MCLK  &mkp RCLK                &kp LC(RIGHT_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans      &input_1Password   &kp LA(LC(LG(M)))   &mkp MB4                &kp LG(R)  &mkp MB5                 &kp LA(LC(LG(L)))
-&trans  &trans  &trans  &trans  &trans  &trans      &trans             &lt 3 ENTER                                                                     &input_versatile_Psddword
+&trans  &trans  &trans  &trans  &trans                                 &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &input_pc_pssword  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &input_1Password   &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                   &input_versatile_Psddword
             >;
         };
 
