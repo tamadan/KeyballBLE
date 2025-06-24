@@ -38,16 +38,6 @@
             key-positions = <41 17>;
         };
 
-        move_right_window {
-            bindings = <&kp LC(RIGHT_ARROW)>;
-            key-positions = <21 41>;
-        };
-
-        move_left_window {
-            bindings = <&kp LC(LEFT_ARROW)>;
-            key-positions = <17 41>;
-        };
-
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <30 41>;
@@ -143,10 +133,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE     &trans          &kp UP_ARROW    &trans           &trans                                 &none              &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &game_ID
-&kp TAB        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &none   &kp HOME           &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&trans         &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans  &kp LG(LA(LC(M)))  &mkp MB4                &kp LG(R)       &mkp MB5                 &kp LG(LA(LC(L)))
-&kp LG(SPACE)  &kp LA(SPACE)   &kp LEFT_SHIFT  &trans           &trans  &trans                 &trans  &trans                                                                              &trans
+&kp ESCAPE     &trans          &kp UP_ARROW    &trans           &trans                                 &none                       &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &game_ID
+&kp TAB        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &none   &kp LG(LA(LC(LEFT_ARROW)))  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LG(LA(LC(RIGHT_ARROW)))
+&trans         &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &trans  &kp LG(LA(LC(M)))           &mkp MB4                &kp LG(R)       &mkp MB5                 &kp LG(LA(LC(L)))
+&kp LG(SPACE)  &kp LA(SPACE)   &kp LEFT_SHIFT  &trans           &trans  &trans                 &trans  &trans                                                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
