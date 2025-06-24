@@ -38,49 +38,14 @@
             key-positions = <41 17>;
         };
 
-        tab_left {
-            bindings = <&kp LG(LA(LEFT_ARROW))>;
-            key-positions = <41 6>;
-        };
-
-        tab_right {
-            bindings = <&kp LG(LA(RIGHT_ARROW))>;
-            key-positions = <8 41>;
-        };
-
-        page_back {
-            bindings = <&mkp MB4>;
-            key-positions = <30 41>;
-        };
-
-        page_forward {
-            bindings = <&mkp MB5>;
-            key-positions = <32 41>;
-        };
-
-        page_reload {
-            bindings = <&kp LG(R)>;
-            key-positions = <41 31>;
-        };
-
-        move_left_window {
-            bindings = <&kp LC(LEFT_ARROW)>;
-            key-positions = <17 41>;
-        };
-
         move_right_window {
             bindings = <&kp LC(RIGHT_ARROW)>;
             key-positions = <21 41>;
         };
 
-        mission_control {
-            bindings = <&kp LA(LG(LC(M)))>;
-            key-positions = <29 41>;
-        };
-
-        launchpad {
-            bindings = <&kp LG(LC(LA(L)))>;
-            key-positions = <33 41>;
+        move_left_window {
+            bindings = <&kp LC(LEFT_ARROW)>;
+            key-positions = <17 41>;
         };
     };
 
