@@ -28,11 +28,6 @@
             key-positions = <7 41>;
         };
 
-        to_layer_6 {
-            bindings = <&tog 6>;
-            key-positions = <15 27>;
-        };
-
         to_layer_0 {
             bindings = <&to 0>;
             key-positions = <41 17>;
@@ -51,6 +46,11 @@
         ReLoad {
             bindings = <&kp LG(R)>;
             key-positions = <41 31>;
+        };
+
+        to_layer_6 {
+            bindings = <&to 6>;
+            key-positions = <15 27>;
         };
     };
 
