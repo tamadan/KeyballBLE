@@ -57,6 +57,11 @@
             bindings = <&tog 7>;
             key-positions = <16 28>;
         };
+
+        input_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <22 33>;
+        };
     };
 
     macros {
