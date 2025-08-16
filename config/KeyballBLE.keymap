@@ -92,6 +92,13 @@
             bindings = <&kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N8 &kp N3 &kp N1 &kp N0 &kp RET>;
             label = "INPUT_PC_PSSWORD";
         };
+
+        atmark: atmark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp AT_SIGN>;
+            label = "ATMARK";
+        };
     };
 
     behaviors {
@@ -120,8 +127,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E           &kp R                    &kp T                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D           &kp F                    &kp G        &kp ESC               &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp TAB               &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp A             &kp S         &kp D           &kp F                    &kp G        &kp SQT               &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                    &kp B        &kp SEMICOLON         &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_ALT  &kp LEFT_SHIFT  &mt LEFT_GUI LANGUAGE_1  &lt 2 SPACE  &lt 1 LANGUAGE_2      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
             >;
 
@@ -141,7 +148,7 @@
             bindings = <
 &kp ASTERISK          &kp PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                              &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp INT_YEN       &kp TILDE
 &kp SLASH             &kp MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0      &kp LEFT_PARENTHESIS   &kp DOLLAR       &kp PERCENT   &kp CARET  &kp SINGLE_QUOTE  &kp MINUS
-&mt LEFT_SHIFT COMMA  &kp PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans               &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp SEMICOLON     &kp BACKSLASH
+&mt LEFT_SHIFT COMMA  &kp PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans               &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &atmark       &kp HASH   &kp SEMICOLON     &kp BACKSLASH
 &trans                &kp COMMA   &trans           &trans           &trans           &trans               &kp DELETE             &trans                                                      &kp PIPE
             >;
         };
