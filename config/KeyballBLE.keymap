@@ -68,7 +68,7 @@
         game_ID: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp W &kp I &kp R &kp I &kp G &kp H &kp T &kp NUMBER_8 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_0 &kp AT_SIGN &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp T &kp W &kp I &kp R &kp I &kp G &kp H &kp T &kp NUMBER_8 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_0 &kp AT_SIGN &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp DOT &kp J &kp P &kp TAB &kp LS(T) &kp A &kp M &kp A &kp D &kp A &kp N &kp N1 &kp N2 &kp N3>;
             label = "TO_LAYER_0";
         };
 
@@ -155,7 +155,7 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE             &trans          &kp UP_ARROW    &trans           &trans                                        &none               &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &game_ID
+&kp ESCAPE             &trans          &kp UP_ARROW    &trans           &trans                                        &kp LG(TAB)         &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &game_ID
 &kp TAB                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &kp C_AC_HOME  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LC(RIGHT_ARROW)
 &trans                 &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &kp END        &kp LG(LA(LC(M)))   &mkp MB4                &trans          &mkp MB5                 &kp LG(LA(LC(L)))
 &kp LS(LA(LC(SPACE)))  &kp LA(SPACE)   &kp LEFT_SHIFT  &trans           &trans  &trans                 &trans         &trans                                                                               &input_versatile_Psddword
