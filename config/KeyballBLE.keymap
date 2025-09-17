@@ -225,10 +225,10 @@
 
         game {
             bindings = <
-&none         &none  &kp W  &none           &none                          &none  &none         &kp Q         &kp T         &kp P
-&kp X         &kp A  &kp S  &kp D           &none      &kp ESC      &none  &kp E  &mkp MB1      &mkp MB3      &mkp MB2      &kp R
-&kp X         &none  &none  &none           &none      &kp TAB      &none  &kp E  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
-&kp LEFT_ALT  &none  &none  &kp LEFT_SHIFT  &kp SPACE  &kp O        &kp M  &kp F                                            &none
+&none         &none  &kp W  &none  &none                               &none      &none         &kp Q         &kp T         &kp P
+&kp X         &kp A  &kp S  &kp D  &none  &kp ESC      &none           &kp E      &mkp MB1      &mkp MB3      &mkp MB2      &kp R
+&kp X         &none  &none  &none  &none  &kp TAB      &none           &kp E      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
+&kp LEFT_ALT  &none  &none  &kp M  &kp F  &kp O        &kp LEFT_SHIFT  &kp SPACE                                            &none
             >;
         };
     };
