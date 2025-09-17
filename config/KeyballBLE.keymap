@@ -113,6 +113,13 @@
             bindings = <&kp LANGUAGE_1 &to 0>;
             label = "LANG1";
         };
+
+        to_layer0_trans: to_layer0_trans {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&trans &to 0>;
+            label = "TO_LAYER0_TRANS";
+        };
     };
 
     behaviors {
@@ -198,10 +205,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                                &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans
+&trans  &trans  &trans  &trans  &trans  &trans      &to_layer0_trans  &to_layer0_trans  &mkp LCLK         &mkp MCLK         &mkp RCLK         &to_layer0_trans
+&trans  &trans  &trans  &trans  &trans  &trans      &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                                  &to_layer0_trans
             >;
         };
 
