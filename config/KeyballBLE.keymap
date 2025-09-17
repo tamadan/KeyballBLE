@@ -113,13 +113,6 @@
             bindings = <&kp LANGUAGE_1 &to 0>;
             label = "LANG1";
         };
-
-        tab_layer0: tab_layer0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0 &kp TAB>;
-            label = "TAB_LAYER0";
-        };
     };
 
     behaviors {
