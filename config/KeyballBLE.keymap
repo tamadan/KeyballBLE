@@ -205,10 +205,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans
-&trans  &trans  &trans  &trans  &trans  &trans      &to_layer0_trans  &to_layer0_trans  &mkp LCLK         &mkp MCLK         &mkp RCLK         &to_layer0_trans
-&trans  &trans  &trans  &trans  &trans  &trans      &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans  &to_layer0_trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                                  &to_layer0_trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
