@@ -185,10 +185,10 @@
 
         NUM {
             bindings = <
-&kp ESC               &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                              &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp INT_YEN       &kp TILDE
-&kp TAB               &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0      &kp LEFT_PARENTHESIS   &kp DOLLAR       &kp PERCENT   &kp CARET  &kp SINGLE_QUOTE  &kp MINUS
-&mt LEFT_SHIFT COMMA  &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COLON            &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &atmark       &kp HASH   &kp SEMICOLON     &kp BACKSLASH
-&trans                &kp SLASH     &kp PERIOD       &trans           &trans           &trans               &kp DELETE             &trans                                                      &kp PIPE
+&kp ESC               &kp PLUS      &kp N7      &kp N8  &kp N9                                        &kp AMPERSAND    &kp ASTERISK  &kp GRAVE  &kp INT_YEN       &kp TILDE
+&kp TAB               &kp MINUS     &kp N4      &kp N5  &kp N6  &kp N0         &kp LEFT_PARENTHESIS   &kp DOLLAR       &kp PERCENT   &kp CARET  &kp SINGLE_QUOTE  &kp MINUS
+&mt LEFT_SHIFT COMMA  &kp ASTERISK  &kp N1      &kp N2  &kp N3  &kp COLON      &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &atmark       &kp HASH   &kp SEMICOLON     &kp BACKSLASH
+&trans                &kp SLASH     &kp PERIOD  &trans  &trans  &trans         &kp DELETE             &trans                                                      &kp PIPE
             >;
         };
 
