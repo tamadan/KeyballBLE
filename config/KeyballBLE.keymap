@@ -124,7 +124,7 @@
         layer_0_arrow: layer_0_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &mo 3>;
+            bindings = <&mo 3>;
             label = "LAYER_0_ARROW";
         };
     };
