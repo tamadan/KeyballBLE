@@ -120,6 +120,13 @@
             bindings = <&trans &to 0>;
             label = "TO_LAYER0_TRANS";
         };
+
+        layer_0_arrow: layer_0_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &mo 3>;
+            label = "LAYER_0_ARROW";
+        };
     };
 
     behaviors {
@@ -158,6 +165,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        hold_layer_arrow: hold_layer_arrow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LAYER_ARROW";
+            bindings = <&layer_0_arrow>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -165,10 +181,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E           &kp R                  &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D           &kp F                  &kp G        &kp SQT             &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                  &kp B        &kp SEMICOLON       &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LCTRL GRAVE   &kp LEFT_ALT  &kp LEFT_SHIFT  &Tap_lang1 LEFT_GUI 0  &lt 2 SPACE  &tap_lang2 1 0      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
+&kp Q             &kp W         &kp E           &kp R                  &kp T                                               &kp Y                      &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D           &kp F                  &kp G        &kp SQT             &kp LEFT_BRACKET   &kp H                      &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                  &kp B        &kp SEMICOLON       &kp RIGHT_BRACKET  &kp N                      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LCTRL GRAVE   &kp LEFT_ALT  &kp LEFT_SHIFT  &Tap_lang1 LEFT_GUI 0  &lt 2 SPACE  &tap_lang2 1 0      &kp BACKSPACE      &hold_layer_arrow 0 ENTER                             &kp EQUAL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -194,10 +210,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE             &trans          &kp UP_ARROW    &trans           &trans                                            &kp LG(TAB)         &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &game_ID
-&kp TAB                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP        &input_pc_pssword  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LC(RIGHT_ARROW)
-&trans                 &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN      &input_1Password   &kp LG(LA(LC(M)))   &mkp MB4                &trans          &mkp MB5                 &kp LG(LA(LC(L)))
-&kp LS(LA(LC(SPACE)))  &kp LA(SPACE)   &kp LEFT_SHIFT  &trans           &trans  &trans                 &trans             &trans                                                                               &input_versatile_Psddword
+&kp ESCAPE             &trans         &kp N7          &kp N8  &kp N9                                    &kp LG(TAB)         &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &game_ID
+&kp TAB                &trans         &kp N4          &kp N5  &kp N6  &kp N0         &input_pc_pssword  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LC(RIGHT_ARROW)
+&trans                 &trans         &kp N1          &kp N2  &kp N3  &kp COLON      &input_1Password   &kp LG(LA(LC(M)))   &mkp MB4                &trans          &mkp MB5                 &kp LG(LA(LC(L)))
+&kp LS(LA(LC(SPACE)))  &kp LA(SPACE)  &kp LEFT_SHIFT  &trans  &trans  &trans         &trans             &trans                                                                               &input_versatile_Psddword
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
