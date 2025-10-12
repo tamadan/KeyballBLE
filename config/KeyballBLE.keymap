@@ -29,7 +29,7 @@
         };
 
         to_layer_0 {
-            bindings = <&to 8>;
+            bindings = <&to 0>;
             key-positions = <41 17>;
         };
 
@@ -158,10 +158,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E           &kp R                  &kp T                                               &kp Y        &kp U      &kp I      &kp O      &kp P
-&kp A             &kp S         &kp D           &kp F                  &kp G        &kp SQT             &kp LEFT_BRACKET   &kp H        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                  &kp B        &kp SEMICOLON       &kp RIGHT_BRACKET  &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH
-&mt LCTRL GRAVE   &kp LEFT_ALT  &kp LEFT_SHIFT  &Tap_lang1 LEFT_GUI 0  &lt 2 SPACE  &tap_lang2 1 0      &kp BACKSPACE      &lt 3 ENTER                                   &kp EQUAL
+&kp Q             &kp W         &kp E           &kp R                  &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D           &kp F                  &kp G        &kp SQT             &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                  &kp B        &kp SEMICOLON       &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LCTRL GRAVE   &kp LEFT_ALT  &kp LEFT_SHIFT  &Tap_lang1 LEFT_GUI 0  &lt 2 SPACE  &tap_lang2 1 0      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -230,17 +230,6 @@
 &kp X         &none  &none  &none  &none  &kp TAB      &none           &kp E      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
 &kp LEFT_ALT  &none  &none  &kp M  &kp F  &kp O        &kp LEFT_SHIFT  &kp SPACE                                            &none
             >;
-        };
-
-        QWERTY {
-            bindings = <
-&kp Q             &kp W         &kp E           &kp R                  &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D           &kp F                  &kp G        &kp SQT             &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V                  &kp B        &kp SEMICOLON       &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LCTRL GRAVE   &kp LEFT_ALT  &kp LEFT_SHIFT  &Tap_lang1 LEFT_GUI 0  &lt 2 SPACE  &tap_lang2 1 0      &kp BACKSPACE      &lt 3 ENTER                             &kp EQUAL
-            >;
-
-            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
     };
 };
