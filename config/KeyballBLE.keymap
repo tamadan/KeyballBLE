@@ -114,13 +114,6 @@
             label = "LANG1";
         };
 
-        to_layer0_trans: to_layer0_trans {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&trans &to 0>;
-            label = "TO_LAYER0_TRANS";
-        };
-
         layer_0_arrow: layer_0_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
