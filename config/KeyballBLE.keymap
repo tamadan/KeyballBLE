@@ -176,10 +176,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                     &trans                &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp C_VOLUME_UP        &kp F13     &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))              &kp LG(LS(NUMBER_6))      &kp LS(SINGLE_QUOTE)         &kp F10
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_VOLUME_DOWN      &trans      &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
-&trans  &trans  &trans        &trans        &trans        &trans                 &kp DELETE  &trans                                                                                                   &kp F12
+&trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                     &trans                &kp LS(LC(LG(LEFT_ARROW)))  &kp LS(LC(LG(UP_ARROW)))  &kp LS(LC(LG(RIGHT_ARROW)))  &kp F8
+&trans  &trans  &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp C_VOLUME_UP        &kp F13     &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))              &kp LG(LS(NUMBER_6))      &kp LS(SINGLE_QUOTE)         &kp F10
+&trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp C_VOLUME_DOWN      &trans      &trans                &trans                      &trans                    &kp LS(SEMICOLON)            &kp F11
+&trans  &trans  &kp KP_NUMBER_0  &trans           &trans           &trans                 &kp DELETE  &trans                                                                                                   &kp F12
             >;
         };
 
