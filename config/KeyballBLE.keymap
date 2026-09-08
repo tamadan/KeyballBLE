@@ -62,6 +62,16 @@
             bindings = <&kp QUESTION>;
             key-positions = <22 33>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
